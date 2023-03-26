@@ -139,10 +139,20 @@ _G.packer_plugins = {
     path = "/home/feifei/.local/share/nvim/site/pack/packer/start/my_vivid",
     url = "https://github.com/RaphaeleL/my_vivid"
   },
+  ["nvim-base16"] = {
+    loaded = true,
+    path = "/home/feifei/.local/share/nvim/site/pack/packer/start/nvim-base16",
+    url = "https://github.com/RRethy/nvim-base16"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/feifei/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/feifei/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

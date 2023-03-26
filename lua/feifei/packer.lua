@@ -14,11 +14,15 @@ return require('packer').startup(function(use)
   }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('mbbill/undotree')
+  use('norcalli/nvim-colorizer.lua')
+  require'colorizer'.setup()
 
   -- Colorschemes/themes
 	use('Tsuzat/NeoSolarized.nvim')
 	use('RaphaeleL/my_vivid')
 	use {'tanvirtin/monokai.nvim'}
+	use {'RRethy/nvim-base16'}
+
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -44,3 +48,57 @@ return require('packer').startup(function(use)
 	}
 
  end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--
