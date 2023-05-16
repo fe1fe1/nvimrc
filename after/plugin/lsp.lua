@@ -9,37 +9,17 @@ lsp.ensure_installed({
     'tsserver',
     'eslint',
     'clangd',
-    'lua_ls'
+    'lua_ls',
 })
 
+--Formatter
 lsp.format_on_save({
-    servers = {
-        ['lua_ls'] = { 'lua' },
-        ['rust_analyzer'] = { 'rust' },
-        ['tsserver'] = { 'javascript' },
-    }
+  servers = {
+    ['lua_ls'] = {'lua'},
+    ['rust_analyzer'] = {'rust'},
+    ['tsserver'] = {'javascript'},
+  }
 })
-
-local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
-local lsp_format_on_save = function(bufnr)
-    vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-    vim.api.nvim_create_autocmd('BufWritePre', {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-            vim.lsp.buf.format()
-        end,
-    })
-end
-
-
-local lsp = require('lsp-zero')
-lsp.preset('recommended')
-
-lsp.on_attach(function(client, bufnr)
-    lsp.buffer_autoformat()
-end)
-
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
