@@ -188,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/feifei/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/feifei/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 
